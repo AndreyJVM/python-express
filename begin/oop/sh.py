@@ -9,10 +9,13 @@ class Shape:
         self.x = self.x + deltaX
         self.y = self.y + deltaY
 
+
 class Square(Shape):
     def __init__(self, side=1, x=0, y=0):
         Shape.__init__(self, x, y)
         self.side = side
+
+
 class Circle(Shape):
     pi = 3.14159
     def __init__(self, r=1, x=0, y=0):
